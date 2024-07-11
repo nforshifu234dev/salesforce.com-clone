@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body
+{
+    /* height: 100%; */
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+:root
+{
+    --primary-color: #0D9DDA;
+    --secondary-color: #E5E5E5;
+    --text-color: #333;
+    --text-color-light: #fff;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.block
+{
+    display: block;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.items-center
+{
+    align-items: center;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.justify-between
+{
+    justify-content: space-between;
+}
+
+.justify-around
+{
+    justify-content: space-around;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+section
+{
+    padding: 0 40px;
+    padding-bottom: 60px;
+}
+
+/* Navbar */
+
+.navbar
+{
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+
+.logo img
+{
+    width: 70px;
+}
+
+/* Links */
+
+.links ul
+{
+    list-style: none;
+    display: flex;
+}
+
+.links a
+{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+/* Cta */
+
+.cta
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta button
+{
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta .icons
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cta .icons i
+{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.cta .contact
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+
+}
+
+.navbar .cta,
+.navbar .cta a
+{
+    color: #0176D3;
+    font-weight: bold;
+}
+
+.navbar .links
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero */
+
+.hero
+{
+    position: relative;
+    padding: 0px;
+}
+
+.hero .bg
+{
+    width: 100%;
+}
+
+
+.hero .bg img
+{
+    width: 100%;
+}
+
+.hero .contents
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.hero .contents .left
+{
+    width: 50%;
+}
+
+.hero .contents .left .title
+{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-primary
+{
+    color: var(--primary-color);
+}
+
+.hero .contents .left .information
+{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero .contents .left .c2a
+{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hero .contents .left .c2a button
+{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background: transparent;
+}
+
+.hero .contents .left .c2a button:nth-of-type(1)
+{
+    background: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+.hero .contents .left .c2a button:nth-of-type(1):hover
+{
+    background-color: #0176D3;
+}
+
+.hero .contents .left .c2a button:nth-of-type(2)
+{
+    border-color: #0D9DDA;
+    color: #0D9DDA;
+}
+
+.hero .contents .left .c2a button:nth-of-type(2):hover
+{
+    background-color: #0D9DDA;
+    color: var(--text-color-light);
+}
+
+/* Latest from Salesforce */
+
+
+
+section .head-title
+{
+    text-align: center;
+    padding: 1rem;
+    color: #0D9DDA;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+section .head-bio
+{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.cards .card
+{
+    width: 23%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card .thumbnail
+{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.cards .card .thumbnail img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cards .card .body
+{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.cards .card .body .title
+{
+    margin: 20px 0;
+}
+
+.cards .card .body a
+{
+    color: var(--text-color);
+    margin: 20px 0;
+    font-weight: 550;
+}
+
+/* Unlock */
+
+.unlock
+{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.unlock button
+{
+    margin-top: 50px;
+    background-color: #0176D3;
+    color: var(--text-color-light);
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+}
+
+
+.cards .small-cards
+{
+
+}
+
+.cards.small-cards .card
+{
+    width: 32.2%;
+    box-shadow: none;
+    text-align: center;
+}
+
+.cards.small-cards .card .thumbnail
+{
+    height: max-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+}
+
+.cards.small-cards .card .thumbnail img
+{
+    border-radius: 10px;
+}
+
+.cards.small-cards .card .title
+{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.cards.small-cards .card .bio
+{
+    line-height: 25px;
+}
+
+.cards.small-cards .card .link
+{
+    color: var(--text-color);
+    font-weight: 550;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.cards.small-cards .card .link:hover
+{
+    color: #0D9DDA;
+    text-decoration: none;
+}
+
+/* RIght SOlution */
+
+.right-solution
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-solution button
+{
+    background: transparent;
+    border: 2px solid #0D9DDA;
+    color: #0D9DDA;
+    border-radius: 5px;
+}
+
+.right-solution .cards
+{
+    margin-top: 30px;
+}
+
+.right-solution .cards .card
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-solution .cards .card .icon
+{
+    width:  80px;
+    height: 80px;
+    background: #eeeeee;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.right-solution .cards .card .icon img
+{
+    width:  100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right-solution .cards .card .text
+{
+    font-weight: 550;
+    text-align: center;
+}
+
+.right-solution .cards .card:hover .text
+{
+    color: #0D9DDA;
+}
+
+.learn-salesforce
+{
+    width: 100% !important;
+}
+
+.learn-salesforce .cards 
+{
+    justify-content: center;
+}
+
+.learn-salesforce .cards .card
+{
+    width: 15%;
+}
+
+.learn-salesforce .cards .card .icon
+{
+    width:  150px;
+    height: 90px;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.learn-salesforce .cards .card .icon img
+{
+    width:  100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.learn-salesforce .cards .card .icon:hover
+{
+    background: #333;
+    cursor: pointer;
+}
